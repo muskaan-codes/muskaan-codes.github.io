@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1e1e1e;
+            color: #c5c8c6;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -21,32 +21,45 @@
             max-width: 1000px;
         }
         header {
-            background: #333;
-            color: #fff;
+            background: #2d2d2d;
+            color: #ffffff;
             padding: 20px 0;
             text-align: center;
+            border-bottom: 2px solid #4e4e4e;
         }
         .profile-info {
             text-align: center;
             padding: 20px;
         }
+        .profile-info img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 3px solid #4e4e4e;
+        }
         .profile-info h1 {
             margin-bottom: 10px;
+            color: #81a2be;
         }
         .profile-info a {
-            color: #333;
+            color: #8abeb7;
             margin: 0 10px;
+            text-decoration: none;
+        }
+        .profile-info a:hover {
+            color: #b5bd68;
         }
         section {
-            background: #fff;
+            background: #2d2d2d;
             margin: 20px 0;
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            border-radius: 8px;
         }
         .section-title {
             font-size: 1.8em;
             margin-bottom: 10px;
-            color: #444;
+            color: #de935f;
         }
         ul {
             list-style-type: none;
@@ -59,15 +72,22 @@
         .experience ul li,
         .certificates ul li,
         .projects ul li {
-            border-bottom: 1px solid #e4e4e4;
+            border-bottom: 1px solid #4e4e4e;
         }
         .social-links i {
-            color: #333;
+            color: #8abeb7;
             font-size: 1.5em;
             margin: 0 10px;
+            transition: color 0.3s;
         }
         .social-links a:hover i {
-            color: #007bff;
+            color: #b5bd68;
+        }
+        a {
+            color: #81a2be;
+        }
+        a:hover {
+            color: #b5bd68;
         }
     </style>
 </head>
@@ -75,11 +95,12 @@
     <header>
         <div class="container">
             <h1>Muskaan Manocha</h1>
-            <p>Software Engineer | Data Analysis | AI Enthusiast ALSO - Fitness Enthusiast | Traveller | Recent ACLer</p>
+            <p>Software Engineer | Data Analysis | AI Enthusiast</p>
         </div>
     </header>
 
     <div class="profile-info">
+        <img src="Muskaan.jpg" alt="Muskaan Manocha" width="200" height="200">
         <h2>Contact Information</h2>
         <p>Email: <a href="mailto:muskaan.manocha001@umb.edu">muskaan.manocha001@umb.edu</a></p>
         <div class="social-links">
@@ -89,8 +110,12 @@
         </div>
     </div>
 
-    <div class="embed-portfolio">
-        <iframe src="https://sites.google.com/view/muskaan-manocha" width="100%" height="600" style="border:none;"></iframe>
+    <div class="portfolio-section container">
+        <section>
+            <h2>Check Out My Previous Portfolio</h2>
+            <p>You can view my previous portfolio on Google Sites by clicking the link below:</p>
+            <a href="https://sites.google.com/view/muskaan-manocha" target="_blank">Muskaan Manocha's Google Portfolio</a>
+        </section>
     </div>
 
     <div class="container">
